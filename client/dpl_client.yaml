@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: test-dply-client
+spec:
+  selector:
+    matchLabels:
+       app: test_pod_client
+  template:
+    metadata:
+      labels:
+        app: test_pod_client
+    spec:
+      containers:
+      - name: mycontainer
+        image: mmaksimovic1419s/dcr_client
+        ports:
+        - name: containerport
+          containerPort: 8081

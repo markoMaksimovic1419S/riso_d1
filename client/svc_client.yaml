@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: prodigy-service-client
+spec:
+  type: LoadBalancer
+  selector:
+    app: test_pod_client
+  ports:
+    - name: sentiment
+      protocol: TCP
+      port: 8081
+      targetPort: containerport
