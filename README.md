@@ -7,10 +7,17 @@ RISO domaci 1 docker-kubernetes
 
 ![Docker_test](https://github.com/markoMaksimovic1419S/riso_d1/blob/main/slike/docker_testiranje.png?raw=true)
 
-*** Ovo testiranje je odradjeno na window-u, ali sam kasnije presao na linux zbog problema sa k8s-om, na windows-u sam koristio localhost ***
+*** Ovo testiranje je odradjeno na localhost-u, ali sam kasnije to promenio zbog problema sa k8s-om ***
 
 3. Docker image sam upload na docker hub (mmaksimovic1419s/dcr_server i mmaksimovic1419s/dcr_client)
 4. Nakon toga kreirani su deploy i service yaml fajlovi, postavljeni kao loadbalancer sa portovima 8081 i koriscene su image sa hub-a
-5. Prilikom testiranja sam enable metalib za ip range 192.168.1.5 - 192.168.1.5 (moj laptop) kako bih imao external ip i istestirao
+
+![Docker_test](https://github.com/markoMaksimovic1419S/riso_d1/blob/main/slike/kubernetes_testiranje.png?raw=true)
+
+6. Prilikom testiranja sam enable metalib za ip range 192.168.1.5 - 192.168.1.5 (moj laptop) kako bih imao external ip i istestirao
+
+![Docker_test](https://github.com/markoMaksimovic1419S/riso_d1/blob/main/slike/kubernetes_insomnia.png?raw=true)
+
 *** Takodje sam i u client skripti to zamenio, pa obratiti paznju prilikom testiranja na drugoj masini ***
+
         
