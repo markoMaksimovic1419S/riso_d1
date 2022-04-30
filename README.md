@@ -3,6 +3,7 @@ RISO domaci 1 docker-kubernetes
 ## Proces izrade
 1. Prvo je testiran flask server uz pomoc Insominia programa, a nakon toga je napravljena prosta client skripta koja salje 3 POST request-a.
 2. Nakon testiranja napravljeni su Dockerfile-ovi za client i server i onda istestirani
+![alt text](https://github.com/mmaksimovic1419s/riso_d1/blob/main/docker_testiranje.png?raw=true)
 
     *** Ovo testiranje je odradjeno na window-u, ali sam kasnije presao na linux zbog problema sa k8s-om, na windows-u sam koristio localhost ***
 
